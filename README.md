@@ -30,7 +30,7 @@ pnpm dev
 | Testing  | Unit Testing                   | _TBD_                                                                                                                                                                                        | _TBD_  |
 | Testing  | Component Testing              | _TBD_                                                                                                                                                                                        | _TBD_  |
 | Testing  | Automation Testing             | _TBD_                                                                                                                                                                                        | _TBD_  |
-| Rules    | GitHub - Commit Rules          | [Husky](https://typicode.github.io/husky/) with [Commitlint](https://commitlint.js.org/#/concepts-commit-conventions) and [ConventionCommit](https://www.conventionalcommits.org/en/v1.0.0/) | _TBD_  |
+| Rules    | GitHub - Commit Rules          | [Husky](https://typicode.github.io/husky/) with [Commitlint](https://commitlint.js.org/#/concepts-commit-conventions) and [ConventionCommit](https://www.conventionalcommits.org/en/v1.0.0/) | ✅     |
 | Rules    | Eslint - Auto Sort Import      | [Eslint auto import](https://www.npmjs.com/package/eslint-plugin-simple-import-sort)                                                                                                         | ✅     |
 
 ## Project Structure
