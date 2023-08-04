@@ -21,17 +21,17 @@ pnpm dev
 
 ## Installed Packages
 
-| Category | Context                        | Package Name                                                                         | Status |
-| -------- | ------------------------------ | ------------------------------------------------------------------------------------ | ------ |
-| UI       | UI CSS Support                 | [Tailwind](https://tailwindcss.com/)                                                 | ✅     |
-| State    | State Management               | [Redux Toolkit](https://github.com/reduxjs/redux-toolkit)                            | ✅     |
-| State    | Data Fetching and Caching Tool | [RTK Query](https://redux-toolkit.js.org/rtk-query/overview)                         | ✅     |
-| Doc      | Component Documentation        | [Storybook](https://storybook.js.org/)                                               | _TBD_  |
-| Testing  | Unit Testing                   | _TBD_                                                                                | _TBD_  |
-| Testing  | Component Testing              | _TBD_                                                                                | _TBD_  |
-| Testing  | Automation Testing             | _TBD_                                                                                | _TBD_  |
-| Rules    | GitHub - Commit Rules          | [Husky](https://typicode.github.io/husky/)                                           | _TBD_  |
-| Rules    | Eslint - Auto Sort Import      | [Eslint auto import](https://www.npmjs.com/package/eslint-plugin-simple-import-sort) | ✅     |
+| Category | Context                        | Package Name                                                                                                                                                                                 | Status |
+| -------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| UI       | UI CSS Support                 | [Tailwind](https://tailwindcss.com/)                                                                                                                                                         | ✅     |
+| State    | State Management               | [Redux Toolkit](https://github.com/reduxjs/redux-toolkit)                                                                                                                                    | ✅     |
+| State    | Data Fetching and Caching Tool | [RTK Query](https://redux-toolkit.js.org/rtk-query/overview)                                                                                                                                 | ✅     |
+| Doc      | Component Documentation        | [Storybook](https://storybook.js.org/)                                                                                                                                                       | _TBD_  |
+| Testing  | Unit Testing                   | _TBD_                                                                                                                                                                                        | _TBD_  |
+| Testing  | Component Testing              | _TBD_                                                                                                                                                                                        | _TBD_  |
+| Testing  | Automation Testing             | _TBD_                                                                                                                                                                                        | _TBD_  |
+| Rules    | GitHub - Commit Rules          | [Husky](https://typicode.github.io/husky/) with [Commitlint](https://commitlint.js.org/#/concepts-commit-conventions) and [ConventionCommit](https://www.conventionalcommits.org/en/v1.0.0/) | _TBD_  |
+| Rules    | Eslint - Auto Sort Import      | [Eslint auto import](https://www.npmjs.com/package/eslint-plugin-simple-import-sort)                                                                                                         | ✅     |
 
 ## Project Structure
 
