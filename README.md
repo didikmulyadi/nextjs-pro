@@ -2,14 +2,16 @@ This is a [Next.js](https://nextjs.org/) boilerplate that is already installed w
 
 ## Getting Started
 
-First, run the development server:
+Install the dependency and trigger husky
+
+```bash
+npm install && npm prepare
+```
+
+Run the project
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
 ## Environments
@@ -32,6 +34,10 @@ pnpm dev
 | Testing  | Automation Testing             | _TBD_                                                                                                                                                                                        | _TBD_  |
 | Rules    | GitHub - Commit Rules          | [Husky](https://typicode.github.io/husky/) with [Commitlint](https://commitlint.js.org/#/concepts-commit-conventions) and [ConventionCommit](https://www.conventionalcommits.org/en/v1.0.0/) | ✅     |
 | Rules    | Eslint - Auto Sort Import      | [Eslint auto import](https://www.npmjs.com/package/eslint-plugin-simple-import-sort)                                                                                                         | ✅     |
+
+## Commit Rules
+
+By default, you will got an error when the commit format is wrong. See the rules [commitlint.config.js](https://github.com/didikmulyadi/nextjs-advance/blob/main/commitlint.config.js)
 
 ## Project Structure
 
