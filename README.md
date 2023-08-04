@@ -21,17 +21,17 @@ pnpm dev
 
 ## Installed Packages
 
-| Context                        | Package Name                                                                         | Status |
-| ------------------------------ | ------------------------------------------------------------------------------------ | ------ |
-| State Management               | [Redux Toolkit](https://github.com/reduxjs/redux-toolkit)                            | ✅     |
-| Data Fetching and Caching Tool | [RTK Query](https://redux-toolkit.js.org/rtk-query/overview)                         | ✅     |
-| Component Documentation        | Storybook                                                                            | _TBD_  |
-| Eslint - Auto Sort Import      | [Eslint auto import](https://www.npmjs.com/package/eslint-plugin-simple-import-sort) | ✅     |
-| Unit Testing                   | Jest                                                                                 | _TBD_  |
-| Component Testing              | Jest with React Test Renderer                                                        | _TBD_  |
-| Automation Testing             | Cypress                                                                              | _TBD_  |
-| UI Framework                   | Tailwind                                                                             | _TBD_  |
-| UI Framework                   | Material UI                                                                          | _TBD_  |
+| Category | Context                        | Package Name                                                                         | Status |
+| -------- | ------------------------------ | ------------------------------------------------------------------------------------ | ------ |
+| UI       | UI CSS Support                 | [Tailwind](https://tailwindcss.com/)                                                 | ✅     |
+| State    | State Management               | [Redux Toolkit](https://github.com/reduxjs/redux-toolkit)                            | ✅     |
+| State    | Data Fetching and Caching Tool | [RTK Query](https://redux-toolkit.js.org/rtk-query/overview)                         | ✅     |
+| Doc      | Component Documentation        | [Storybook](https://storybook.js.org/)                                               | _TBD_  |
+| Testing  | Unit Testing                   | _TBD_                                                                                | _TBD_  |
+| Testing  | Component Testing              | _TBD_                                                                                | _TBD_  |
+| Testing  | Automation Testing             | _TBD_                                                                                | _TBD_  |
+| Rules    | GitHub - Commit Rules          | [Husky](https://typicode.github.io/husky/)                                           | _TBD_  |
+| Rules    | Eslint - Auto Sort Import      | [Eslint auto import](https://www.npmjs.com/package/eslint-plugin-simple-import-sort) | ✅     |
 
 ## Project Structure
 
