@@ -18,6 +18,9 @@ import { RuleConfigSeverity } from "@commitlint/types";
  *   chore: development changes - the user cant see the changes, e.g. changes in gitignore
  *   style: development changes - pure styling changes
  *   test: development changes - affecting any tests
+ *   feat: development changes - new code
+ *   fix: development changes - fix bug issue in the existing code
+ *   perf: development changes - improve performance
  */
 
 module.exports = {
@@ -38,7 +41,7 @@ module.exports = {
         "layout",
         "redux",
         "config",
-        "supported-files",
+        "development-needs",
         "readme",
       ],
     ],
