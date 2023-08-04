@@ -21,17 +21,17 @@ pnpm dev
 
 ## Installed Packages
 
-| Context                        | Package Name                  | Status |
-| ------------------------------ | ----------------------------- | ------ |
-| State Management               | Redux                         | ✅     |
-| Data Fetching and Caching Tool | RTK Query                     | ✅     |
-| Component Documentation        | Storybook                     | _TBD_  |
-| Eslint - Auto Sort Import      | Eslint auto import            | _TBD_  |
-| Unit Testing                   | Jest                          | _TBD_  |
-| Component Testing              | Jest with React Test Renderer | _TBD_  |
-| Automation Testing             | Cypress                       | _TBD_  |
-| UI Framework                   | Tailwind                      | _TBD_  |
-| UI Framework                   | Material UI                   | _TBD_  |
+| Context                        | Package Name                                                                         | Status |
+| ------------------------------ | ------------------------------------------------------------------------------------ | ------ |
+| State Management               | [Redux Toolkit](https://github.com/reduxjs/redux-toolkit)                            | ✅     |
+| Data Fetching and Caching Tool | [RTK Query](https://redux-toolkit.js.org/rtk-query/overview)                         | ✅     |
+| Component Documentation        | Storybook                                                                            | _TBD_  |
+| Eslint - Auto Sort Import      | [Eslint auto import](https://www.npmjs.com/package/eslint-plugin-simple-import-sort) | ✅     |
+| Unit Testing                   | Jest                                                                                 | _TBD_  |
+| Component Testing              | Jest with React Test Renderer                                                        | _TBD_  |
+| Automation Testing             | Cypress                                                                              | _TBD_  |
+| UI Framework                   | Tailwind                                                                             | _TBD_  |
+| UI Framework                   | Material UI                                                                          | _TBD_  |
 
 ## Project Structure
 
