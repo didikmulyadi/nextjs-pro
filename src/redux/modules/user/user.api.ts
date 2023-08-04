@@ -1,11 +1,13 @@
-import { ENV } from "@/config/env";
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+
+import { ENV } from "@/config/env";
+import { GetState } from "@/redux/libs";
+
 import { IUser } from "./user.type";
 import {
   IUpdateUserRequestBody,
   IUpdateUserResponse,
 } from "./user.type.reqres";
-import { GetState } from "@/redux/libs";
 
 export const userApi = createApi({
   reducerPath: "userApi",

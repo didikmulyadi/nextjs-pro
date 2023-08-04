@@ -3,9 +3,10 @@
  */
 
 import { createSlice } from "@reduxjs/toolkit";
-import type { PayloadAction } from "@reduxjs/toolkit";
 
 import { IUserSlice } from "./user.type";
+
+import type { PayloadAction } from "@reduxjs/toolkit";
 
 const initialState: IUserSlice = { name: "", token: "" };
 

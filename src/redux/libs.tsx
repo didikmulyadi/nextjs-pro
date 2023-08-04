@@ -4,8 +4,10 @@ import {
   useDispatch,
   useSelector,
 } from "react-redux";
-import type { RootState, AppDispatch } from "./store";
+
 import { store } from "./store";
+
+import type { AppDispatch, RootState } from "./store";
 
 /**
  * A dispatch that is integrated with AppDispatch, so know user has a preview function that can be used
