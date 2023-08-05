@@ -1,7 +1,8 @@
 {
   "extends": "next/core-web-vitals",
-  "plugins": ["simple-import-sort"],
+  "plugins": ["simple-import-sort", "testing-library"],
   "rules": {
+    // simple-import-sort
     "simple-import-sort/imports": [
       "error",
       {
@@ -23,6 +24,15 @@
         ]
       }
     ],
-    "simple-import-sort/exports": "error"
+    "simple-import-sort/exports": "error",
+
+    // testing-library
+    "testing-library/consistent-data-testid": [
+      "error",
+      {
+        "testIdAttribute": ["data-testid"],
+        "testIdPattern": "^(input|button|text|container|list|item)(__[a-z]*[0-9]?)?$"
+      }
+    ]
   }
 }
