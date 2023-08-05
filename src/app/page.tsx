@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image'
 
 const Home = () => {
   return (
@@ -15,7 +15,7 @@ const Home = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{" "}
+            By{' '}
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
@@ -47,7 +47,7 @@ const Home = () => {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
+            Docs{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
@@ -64,7 +64,7 @@ const Home = () => {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
+            Learn{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
@@ -81,7 +81,7 @@ const Home = () => {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
+            Templates{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
@@ -98,7 +98,7 @@ const Home = () => {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
+            Deploy{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
@@ -109,7 +109,7 @@ const Home = () => {
         </a>
       </div>
     </main>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

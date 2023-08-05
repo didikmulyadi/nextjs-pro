@@ -1,52 +1,49 @@
-import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
-import { ENV } from "@/config/env";
-import { GetState } from "@/redux/libs";
+import { ENV } from '@/config/env'
+import { GetState } from '@/redux/libs'
 
-import { IUser } from "./user.type";
-import {
-  IUpdateUserRequestBody,
-  IUpdateUserResponse,
-} from "./user.type.reqres";
+import { IUser } from './user.type'
+import { IUpdateUserRequestBody, IUpdateUserResponse } from './user.type.reqres'
 
 export const userApi = createApi({
-  reducerPath: "userApi",
+  reducerPath: 'userApi',
   baseQuery: fetchBaseQuery({
     baseUrl: ENV.API_BASE_URL,
     prepareHeaders: (headers, { getState }) => {
-      const token = (getState as GetState)().user.token;
+      const token = (getState as GetState)().user.token
       if (token) {
-        headers.set("Authorization", `Bearer ${token}`);
+        headers.set('Authorization', `Bearer ${token}`)
 
-        return headers;
+        return headers
       }
     },
   }),
-  tagTypes: ["GET_ME"],
+  tagTypes: ['GET_ME'],
   endpoints: (builder) => ({
     getMe: builder.query<IUser, void>({
       query: () => ({
         /**
          * 1 is an example, in the real case we use token to determine the user
          */
-        url: "/users/1",
+        url: '/users/1',
       }),
       /**
        * Every tags should be registered in tagTypes
        */
-      providesTags: ["GET_ME"],
+      providesTags: ['GET_ME'],
     }),
     updateMe: builder.mutation<IUpdateUserResponse, IUpdateUserRequestBody>({
       query: (body) => {
         return {
           url: `/users/1`,
           body,
-          method: "PUT",
-        };
+          method: 'PUT',
+        }
       },
-      invalidatesTags: ["GET_ME"],
+      invalidatesTags: ['GET_ME'],
     }),
   }),
-});
+})
 
-export const { useGetMeQuery, useUpdateMeMutation } = userApi;
+export const { useGetMeQuery, useUpdateMeMutation } = userApi

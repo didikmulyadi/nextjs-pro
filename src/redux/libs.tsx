@@ -3,26 +3,26 @@ import {
   TypedUseSelectorHook,
   useDispatch,
   useSelector,
-} from "react-redux";
+} from 'react-redux'
 
-import { store } from "./store";
+import { store } from './store'
 
-import type { AppDispatch, RootState } from "./store";
+import type { AppDispatch, RootState } from './store'
 
 /**
  * A dispatch that is integrated with AppDispatch, so know user has a preview function that can be used
  */
-export const useAppDispatch = () => useDispatch<AppDispatch>();
+export const useAppDispatch = () => useDispatch<AppDispatch>()
 
 /**
  * A selector that is integrated with RootState, so know user has a preview state
  */
-export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
+export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector
 
 /**
  * Used in *.api.ts when accessing getState
  */
-export type GetState = () => RootState;
+export type GetState = () => RootState
 
 /**
  * A wrapper to share the redux state, usually used in a layout
@@ -30,7 +30,7 @@ export type GetState = () => RootState;
 export const ReduxToolkitProvider = ({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) => {
-  return <Provider store={store}>{children}</Provider>;
-};
+  return <Provider store={store}>{children}</Provider>
+}

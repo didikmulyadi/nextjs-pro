@@ -1,6 +1,6 @@
 export enum Gender {
-  male = "male",
-  female = "female",
+  male = 'male',
+  female = 'female',
 }
 
 /**
@@ -8,15 +8,17 @@ export enum Gender {
  * Reference: https://dummyjson.com/docs/users#single
  */
 export interface IUser {
-  id: number;
+  id: number
 
-  firstName: string;
-  lastName: string;
-  age: number;
-  gender: Gender;
+  firstName: string
+  lastName: string
+  age: number
+  gender: Gender
 }
 
 export interface IUserSlice {
-  name: string;
-  token: string;
+  name: string
+  token: string
 }
+
+const a = ''
