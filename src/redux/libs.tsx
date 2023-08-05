@@ -27,10 +27,10 @@ export type GetState = () => RootState;
 /**
  * A wrapper to share the redux state, usually used in a layout
  */
-export function ReduxToolkitProvider({
+export const ReduxToolkitProvider = ({
   children,
 }: {
   children: React.ReactNode;
-}) {
+}) => {
   return <Provider store={store}>{children}</Provider>;
-}
+};

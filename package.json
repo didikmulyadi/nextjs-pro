@@ -29,6 +29,8 @@
   "devDependencies": {
     "@commitlint/cli": "^17.6.7",
     "@commitlint/config-conventional": "^17.6.7",
+    "@next/eslint-plugin-next": "^13.4.12",
+    "eslint-config-prettier": "^8.10.0",
     "eslint-plugin-testing-library": "^5.11.0",
     "husky": "^8.0.0"
   }

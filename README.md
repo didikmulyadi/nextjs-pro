@@ -45,8 +45,10 @@ By default, you will got an error when the commit format is wrong. See the rules
 
 ### Eslint
 
-1. For the import rules, check `"simple-import-sort/imports"` from `rules` in the `eslintrc.json`
-1. For the test id format, check `"testing-library/consistent-data-testid"` from `rules` in the `eslintrc.json`
+We implement the eslint to enforce React best practice is applied in the project. The config stored in `eslintrc.json`
+
+1. For the import rules, check `"simple-import-sort/imports"` from `rules`
+2. For the test id format, check `"testing-library/consistent-data-testid"` from `rules`
 
 ```
 ❌ input__email#
@@ -54,6 +56,29 @@ By default, you will got an error when the commit format is wrong. See the rules
 ✅ button__login
 ✅ list__user
 ✅ item__user1
+```
+
+3. For the boolean props name, check `"react/boolean-prop-naming"` from `rules`
+
+```
+❌ enabled
+✅ isEnabled
+✅ hasItem
+```
+
+4. For the component function type, `"react/function-component-definition"` from `rules`
+
+```
+❌ function Component() {
+    return (
+        ...
+    )
+}
+✅ const Component = () => {
+    return (
+        ...
+    )
+}
 ```
 
 ## Project Structure
