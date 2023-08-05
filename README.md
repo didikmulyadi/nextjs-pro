@@ -29,15 +29,32 @@ npm run dev
 | State    | State Management               | [Redux Toolkit](https://github.com/reduxjs/redux-toolkit)                                                                                                                                    | ✅     |
 | State    | Data Fetching and Caching Tool | [RTK Query](https://redux-toolkit.js.org/rtk-query/overview)                                                                                                                                 | ✅     |
 | Doc      | Component Documentation        | [Storybook](https://storybook.js.org/)                                                                                                                                                       | _TBD_  |
+| Rules    | GitHub - Commit Rules          | [Husky](https://typicode.github.io/husky/) with [Commitlint](https://commitlint.js.org/#/concepts-commit-conventions) and [ConventionCommit](https://www.conventionalcommits.org/en/v1.0.0/) | ✅     |
+| Rules    | Eslint - Auto Sort Import      | [Eslint auto import](https://www.npmjs.com/package/eslint-plugin-simple-import-sort)                                                                                                         | ✅     |
+| Rules    | Eslint - Data Test ID format   | [Eslint plugin testing library](https://www.npmjs.com/package/eslint-plugin-testing-library)                                                                                                 | ✅     |
 | Testing  | Unit Testing                   | _TBD_                                                                                                                                                                                        | _TBD_  |
 | Testing  | Component Testing              | _TBD_                                                                                                                                                                                        | _TBD_  |
 | Testing  | Automation Testing             | _TBD_                                                                                                                                                                                        | _TBD_  |
-| Rules    | GitHub - Commit Rules          | [Husky](https://typicode.github.io/husky/) with [Commitlint](https://commitlint.js.org/#/concepts-commit-conventions) and [ConventionCommit](https://www.conventionalcommits.org/en/v1.0.0/) | ✅     |
-| Rules    | Eslint - Auto Sort Import      | [Eslint auto import](https://www.npmjs.com/package/eslint-plugin-simple-import-sort)                                                                                                         | ✅     |
+| Content  | Internationalization           | _TBD_                                                                                                                                                                                        | _TBD_  |
 
-## Commit Rules
+## Rules
+
+### Commit
 
 By default, you will got an error when the commit format is wrong. See the rules [commitlint.config.js](https://github.com/didikmulyadi/nextjs-advance/blob/main/commitlint.config.js)
+
+### Eslint
+
+1. For the import rules, check `"simple-import-sort/imports"` from `rules` in the `eslintrc.json`
+1. For the test id format, check `"testing-library/consistent-data-testid"` from `rules` in the `eslintrc.json`
+
+```
+❌ input__email#
+✅ input__email
+✅ button__login
+✅ list__user
+✅ item__user1
+```
 
 ## Project Structure
 
@@ -83,8 +100,6 @@ nextjs-advance
 
 ## Remove Package Guide
 
-To Remove the Material UI or Tailwind please follow below section
-
 ### Remove Material UI Guide
 
 _TBD_
@@ -92,3 +107,15 @@ _TBD_
 ### Remove Tailwind UI Guide
 
 _TBD_
+
+### Remove Eslint Auto Import Rules
+
+1. run `npm uninstall eslint-plugin-simple-import-sort`
+2. remove `"simple-import-sort"` from `plugins` in `eslintrc.json`
+3. remove `"simple-import-sort/imports"` from `rules` in `eslintrc.json`
+
+### Remove Eslint Testing Library
+
+1. run `npm uninstall eslint-plugin-testing-library`
+2. remove `""testing-library""` from `plugins` in `eslintrc.json`
+3. remove `"testing-library/*"` from `rules` in `eslintrc.json`
