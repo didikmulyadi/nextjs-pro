@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "storybook:dev": "storybook dev -p 6006",
+    "storybook:build": "storybook build"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
@@ -30,8 +32,16 @@
     "@commitlint/cli": "^17.6.7",
     "@commitlint/config-conventional": "^17.6.7",
     "@next/eslint-plugin-next": "^13.4.12",
+    "@storybook/addon-essentials": "^7.2.1",
+    "@storybook/addon-interactions": "^7.2.1",
+    "@storybook/addon-links": "^7.2.1",
+    "@storybook/blocks": "^7.2.1",
+    "@storybook/nextjs": "^7.2.1",
+    "@storybook/react": "^7.2.1",
+    "@storybook/testing-library": "^0.2.0",
     "eslint-config-prettier": "^8.10.0",
     "eslint-plugin-testing-library": "^5.11.0",
-    "husky": "^8.0.0"
+    "husky": "^8.0.0",
+    "storybook": "^7.2.1"
   }
 }
