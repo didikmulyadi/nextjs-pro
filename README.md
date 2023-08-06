@@ -20,6 +20,7 @@ npm run dev
 | ------------------------ | -------------------------------- |
 | NODE_ENV                 | e.g. `production`, `development` |
 | NEXT_PUBLIC_API_BASE_URL | e.g. `https://dummyjson.com`     |
+| NEXT_PUBLIC_WEB_BASE_URL | e.g. `https://didikmulyadi.com`  |
 
 ## Installed Packages
 
