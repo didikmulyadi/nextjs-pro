@@ -10,16 +10,6 @@ const customJestConfig = {
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   testEnvironment: 'jest-environment-jsdom',
   collectCoverage: true,
-  collectCoverageFrom: [
-    '**/src/*.{ts,tsx,js,jsx}',
-    '!**/node_modules/**',
-    '!**/vendor/**',
-    '!**/*.stories*.{ts,tsx,js,jsx}',
-    '!**/*.test*.{ts,tsx,js,jsx}',
-    '!**/robots.ts',
-    '!**/sitemap.ts',
-    '!**/*.snap',
-  ],
   coverageDirectory: 'coverage/jest',
   coveragePathIgnorePatterns: [
     '/node_modules/',
