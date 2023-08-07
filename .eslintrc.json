@@ -5,7 +5,7 @@
     "plugin:@next/next/recommended",
     "next"
   ],
-  "plugins": ["simple-import-sort", "testing-library"],
+  "plugins": ["simple-import-sort", "testing-library", "jsdoc"],
   "rules": {
     "prefer-const": "error",
     "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
@@ -52,6 +52,47 @@
     "react/boolean-prop-naming": [
       "error",
       { "rule": "^(is|has)[A-Z]([A-Za-z0-9]?)+" }
-    ]
+    ],
+
+    // js-doc
+    "jsdoc/require-jsdoc": [
+      "error",
+      {
+        "contexts": [
+          "TSInterfaceDeclaration", // interface should have a description
+          "TSPropertySignature", // interface property should have a description
+          "TSMethodSignature"
+        ]
+      }
+    ],
+    "jsdoc/check-access": 1, // Recommended
+    "jsdoc/check-alignment": 1, // Recommended
+    "jsdoc/check-param-names": 1, // Recommended
+    "jsdoc/check-property-names": 1, // Recommended
+    "jsdoc/check-tag-names": 1, // Recommended
+    "jsdoc/check-types": 1, // Recommended
+    "jsdoc/check-values": 1, // Recommended
+    "jsdoc/empty-tags": 1, // Recommended
+    "jsdoc/implements-on-classes": 1, // Recommended
+    "jsdoc/multiline-blocks": 1, // Recommended
+    "jsdoc/no-multi-asterisks": 1, // Recommended
+    "jsdoc/no-undefined-types": 1, // Recommended
+    "jsdoc/require-param": 1, // Recommended
+    "jsdoc/require-param-description": 1, // Recommended
+    "jsdoc/require-param-name": 1, // Recommended
+    "jsdoc/require-param-type": 1, // Recommended
+    "jsdoc/require-property": 1, // Recommended
+    "jsdoc/require-property-description": 1, // Recommended
+    "jsdoc/require-property-name": 1, // Recommended
+    "jsdoc/require-property-type": 1, // Recommended
+    "jsdoc/require-returns": 0,
+    "jsdoc/require-returns-check": 0,
+    "jsdoc/require-returns-description": 0,
+    "jsdoc/require-throws": 1,
+    "jsdoc/require-yields": 1, // Recommended
+    "jsdoc/require-yields-check": 1, // Recommended
+    "jsdoc/sort-tags": 1,
+    "jsdoc/tag-lines": 1, // Recommended
+    "jsdoc/valid-types": 1 // Recommended
   }
 }

@@ -2,6 +2,9 @@ import './button.css'
 
 import React from 'react'
 
+/**
+ * Button component props
+ */
 interface IButtonProps {
   /**
    * Is this the principal call to action on the page?
@@ -25,16 +28,15 @@ interface IButtonProps {
   onClick?: () => void
 }
 
-/**
- * Primary UI component for user interaction
- */
-export const Button = ({
-  primary = false,
-  size = 'medium',
-  backgroundColor,
-  label,
-  ...props
-}: IButtonProps) => {
+export const Button = (_props: IButtonProps) => {
+  const {
+    primary = false,
+    size = 'medium',
+    backgroundColor,
+    label,
+    ...props
+  } = _props
+
   const mode = primary
     ? 'storybook-button--primary'
     : 'storybook-button--secondary'

@@ -33,6 +33,7 @@ npm run dev
 | Rules    | GitHub - Commit Rules          | [Husky](https://typicode.github.io/husky/) with [Commitlint](https://commitlint.js.org/#/concepts-commit-conventions) and [ConventionCommit](https://www.conventionalcommits.org/en/v1.0.0/) | ✅     |
 | Rules    | Eslint - Auto Sort Import      | [Eslint auto import](https://www.npmjs.com/package/eslint-plugin-simple-import-sort)                                                                                                         | ✅     |
 | Rules    | Eslint - Data Test ID format   | [Eslint plugin testing library](https://www.npmjs.com/package/eslint-plugin-testing-library)                                                                                                 | ✅     |
+| Rules    | Eslint - Require JSDoc         | [Eslint plugin JS Doc](https://github.com/gajus/eslint-plugin-jsdoc)                                                                                                                         | ✅     |
 | Testing  | Unit Testing                   | [Jest](https://jestjs.io/)                                                                                                                                                                   | ✅     |
 | Testing  | Component Testing              | [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)                                                                        | _TBD_  |
 | Testing  | Automation Testing             | _TBD_                                                                                                                                                                                        | _TBD_  |
@@ -145,3 +146,9 @@ _TBD_
 1. run `npm uninstall eslint-plugin-testing-library`
 2. remove `""testing-library""` from `plugins` in `eslintrc.json`
 3. remove `"testing-library/*"` from `rules` in `eslintrc.json`
+
+### Remove Eslint JS Doc
+
+1. run `npm uninstall eslint-plugin-jsdoc`
+2. remove `""js-doc""` from `plugins` in `eslintrc.json`
+3. remove `"jsdoc/*"` from `rules` in `eslintrc.json`

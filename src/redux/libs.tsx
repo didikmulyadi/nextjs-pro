@@ -1,3 +1,4 @@
+import { ThunkDispatch } from '@reduxjs/toolkit'
 import {
   Provider,
   TypedUseSelectorHook,
@@ -25,12 +26,19 @@ export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector
 export type GetState = () => RootState
 
 /**
- * A wrapper to share the redux state, usually used in a layout
+ * Redux toolkit provider props
  */
-export const ReduxToolkitProvider = ({
-  children,
-}: {
+interface IReduxToolkitProvider {
+  /**
+   * react component
+   */
   children: React.ReactNode
-}) => {
-  return <Provider store={store}>{children}</Provider>
+}
+
+/**
+ * A wrapper to share the redux state, usually used in a layout
+ * @param {props} props is parameter that is contain a component
+ */
+export const ReduxToolkitProvider = (props: IReduxToolkitProvider) => {
+  return <Provider store={store}>{props.children}</Provider>
 }
