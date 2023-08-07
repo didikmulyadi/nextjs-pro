@@ -14,5 +14,17 @@ describe('Button', () => {
     const button = screen.getByTestId('button__save')
 
     expect(button).toBeInTheDocument()
+    expect(
+      button.classList.contains('storybook-button--secondary')
+    ).toBeTruthy()
+  })
+
+  it('renders primary button correctly', () => {
+    render(<Button label="save" data-testid="button__save" primary />)
+
+    const button = screen.getByTestId('button__save')
+
+    expect(button).toBeInTheDocument()
+    expect(button.classList.contains('storybook-button--primary')).toBeTruthy()
   })
 })
