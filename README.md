@@ -1,4 +1,4 @@
-# Boilerplate or Starter Template for Next.JS 13 App with Typescript, RTK Query, Tailwind, and Storybook
+# Boilerplate or Starter Template for Next.JS
 
 Production boilerplate/template to develop nextjs application 🛠️🎉. Next.js App Directory + TypeScript + ESLint + Prettier + Husky + Jest + Testing Library + Cypress + Storybook + Commitlint + VSCode + Tailwind CSS + Redux Tookit + RTK Query.
 
