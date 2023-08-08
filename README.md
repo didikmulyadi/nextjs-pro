@@ -19,7 +19,6 @@ Developer experience first:
 💖 Code Formatter with Prettier <br/>
 🦊 Husky for Git Hooks <br/>
 🚓 Lint git commit with Commitlint <br/>
-🎁 Automatic changelog generation with Semantic Release <br/>
 🗂 VSCode configuration: ESLint, Prettier <br/>
 <br/>
 Built-in feature from Next.js: <br/>
