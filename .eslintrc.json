@@ -15,6 +15,7 @@
         "./src/redux/libs.tsx",
         "./*.config.ts",
         "./*.config.js",
+        "./src/middleware.ts",
         "./src/component/**/*.stories.ts"
       ],
       "rules": {
