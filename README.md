@@ -15,7 +15,7 @@ Developer experience first:
 🦺 Unit Testing with Jest and React Testing Library
 🧪 E2E Testing with Cypress
 ✅ Strict Mode for TypeScript and React 18
-📏 Linter with ESLint (default NextJS, NextJS Core Web Vitals, Eslint testing library, JS Doc)
+📏 Linter with ESLint (default NextJS, NextJS Core Web Vitals, Eslint testing library, JS Doc, Unused Export)
 💖 Code Formatter with Prettier
 🦊 Husky for Git Hooks
 🚓 Lint git commit with Commitlint
@@ -64,10 +64,13 @@ npm run dev
 | Rules    | Eslint - Auto Sort Import      | [Eslint auto import](https://www.npmjs.com/package/eslint-plugin-simple-import-sort)                                                                                                         | ✅     |
 | Rules    | Eslint - Data Test ID format   | [Eslint plugin testing library](https://www.npmjs.com/package/eslint-plugin-testing-library)                                                                                                 | ✅     |
 | Rules    | Eslint - Require JSDoc         | [Eslint plugin JS Doc](https://github.com/gajus/eslint-plugin-jsdoc)                                                                                                                         | ✅     |
+| Rules    | Eslint - Unused Export         | [Eslint plugin import](https://github.com/import-js/eslint-plugin-import)                                                                                                                    | ✅     |
 | Testing  | Unit Testing                   | [Jest](https://jestjs.io/)                                                                                                                                                                   | ✅     |
 | Testing  | Component Testing              | [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)                                                                        | ✅     |
 | Testing  | Automation Testing             | _TBD_                                                                                                                                                                                        | _TBD_  |
 | Content  | Internationalization           | _TBD_                                                                                                                                                                                        | _TBD_  |
+| Google   | Google Analytic                | _TBD_                                                                                                                                                                                        | _TBD_  |
+| PWA      | Progressive Web Apps           | _TBD_                                                                                                                                                                                        | _TBD_  |
 
 ## Rules
 
@@ -98,7 +101,7 @@ We implement the eslint to enforce React best practice is applied in the project
 ✅ hasItem
 ```
 
-4. For the component function type, `"react/function-component-definition"` from `rules`
+4. For the component function type, check `"react/function-component-definition"` from `rules`
 
 ```
 ❌ function Component() {
@@ -111,6 +114,43 @@ We implement the eslint to enforce React best practice is applied in the project
         ...
     )
 }
+```
+
+3. For the JS Doc, every interface or function should have a js-doc, check `"jsdoc/require-jsdoc"` from `rules`
+
+```
+/**
+ * Used to store the main data after logged-in
+ */
+export interface IUserSlice {
+  /**
+   * User name
+   */
+  name: string
+  /**
+   * Authorization token
+   */
+  token: string
+}
+```
+
+4. For the export, we will throw you an error when the export is unused. check `"import/no-unused-modules"` from `rules`.
+   This rules is disabled for spesific path, the configuration is stored in `.eslintrc.json`
+
+```
+  "overrides": [
+    {
+      "files": [
+        "./src/app/**/*.ts",
+        "./src/redux/modules/**/*.api.ts",
+        "./src/redux/modules/**/*.slice.ts",
+        "./src/component/**/*.stories.ts"
+      ],
+      "rules": {
+        "import/no-unused-modules": "off"
+      }
+    }
+  ],
 ```
 
 ## Project Structure
