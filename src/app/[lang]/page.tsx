@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import Image from 'next/image'
 
-import { getDictionary } from '@/i18n/dictionaries'
+import { getTranslation } from '@/i18n/dictionaries'
 import { INextPage } from '@/types/common'
 
 const metadata: Metadata = {
@@ -10,14 +10,15 @@ const metadata: Metadata = {
 }
 
 const Home = async ({ params }: INextPage) => {
-  const dictionary = (await getDictionary(params.lang)).home
+  const t = await getTranslation(params.lang)
+  const tHome = t.home
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          {dictionary['get-started-by-editing']}&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
+          {tHome['get-started-by-editing']}&nbsp;
+          <code className="font-mono font-bold">src/app/[lang]/page.tsx</code>
         </p>
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
           <a
@@ -26,7 +27,7 @@ const Home = async ({ params }: INextPage) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {dictionary['by']}{' '}
+            {tHome['by']}{' '}
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
@@ -59,13 +60,13 @@ const Home = async ({ params }: INextPage) => {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            {dictionary.docs}{' '}
+            {tHome.docs}{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            {dictionary['docs-description']}
+            {tHome['docs-description']}
           </p>
         </a>
 
@@ -76,13 +77,13 @@ const Home = async ({ params }: INextPage) => {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            {dictionary['learn']}{' '}
+            {tHome['learn']}{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            {dictionary['learn-description']}
+            {tHome['learn-description']}
           </p>
         </a>
 
@@ -93,13 +94,13 @@ const Home = async ({ params }: INextPage) => {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            {dictionary['templates']}{' '}
+            {tHome['templates']}{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            {dictionary['templates-description']}{' '}
+            {tHome['templates-description']}{' '}
           </p>
         </a>
 
@@ -110,13 +111,13 @@ const Home = async ({ params }: INextPage) => {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            {dictionary['deploy']}{' '}
+            {tHome['deploy']}{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            {dictionary['deploy-description']}
+            {tHome['deploy-description']}
           </p>
         </a>
       </div>
