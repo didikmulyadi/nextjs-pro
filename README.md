@@ -220,3 +220,9 @@ _TBD_
 1. run `npm uninstall eslint-plugin-jsdoc`
 2. remove `""js-doc""` from `plugins` in `eslintrc.json`
 3. remove `"jsdoc/*"` from `rules` in `eslintrc.json`
+
+### Remove Export Rules
+
+1. run `npm uninstall eslint-plugin-import`
+2. remove `""import""` from `plugins` in `eslintrc.json`
+3. remove `"import/no-unused-modules"` from `rules` in `eslintrc.json`
