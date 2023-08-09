@@ -1,4 +1,4 @@
-# Boilerplate or Starter Template for Next.JS 13 App with Typescript, RTK Query, Tailwind, and Storybook
+# Boilerplate or Starter Template for Next.JS
 
 Production boilerplate/template to develop nextjs application 🛠️🎉. Next.js App Directory + TypeScript + ESLint + Prettier + Husky + Jest + Testing Library + Cypress + Storybook + Commitlint + VSCode + Tailwind CSS + Redux Tookit + RTK Query.
 
@@ -8,27 +8,25 @@ Click "Use this template" to use this template and getting the updates
 
 Developer experience first:
 
-⚡ Next.js with App Router
-🔥 Type checking TypeScript
-💎 Tailwind CSS to develop the UI
-🎉 Storybook for UI documentation
-🦺 Unit Testing with Jest and React Testing Library
-🧪 E2E Testing with Cypress
-✅ Strict Mode for TypeScript and React 18
-📏 Linter with ESLint (default NextJS, NextJS Core Web Vitals, Eslint testing library, JS Doc, Unused Export)
-💖 Code Formatter with Prettier
-🦊 Husky for Git Hooks
-🚓 Lint git commit with Commitlint
-🎁 Automatic changelog generation with Semantic Release
-🔍 Visual testing with Percy (Optional)
-🗂 VSCode configuration: Debug, Settings, Tasks and extension for PostCSS, ESLint, Prettier, TypeScript, Jest
-
-Built-in feature from Next.js:
-💡 Absolute Imports using @ prefix
-☕ Minify HTML & CSS
-💨 Live reload
-✅ Cache busting
-🗺️ Sitemap.xml and robots.txt with next-sitemap
+⚡ Next.js with App Router <br/>
+🔥 Type checking TypeScript <br/>
+💎 Tailwind CSS to develop the UI <br/>
+🎉 Storybook for UI documentation <br/>
+🦺 Unit Testing with Jest and React Testing Library <br/>
+🧪 E2E Testing with Cypress <br/>
+✅ Strict Mode for TypeScript and React 18 <br/>
+📏 Linter with ESLint (default NextJS, NextJS Core Web Vitals, Eslint testing library, JS Doc, Unused Export) <br/>
+💖 Code Formatter with Prettier <br/>
+🦊 Husky for Git Hooks <br/>
+🚓 Lint git commit with Commitlint <br/>
+🗂 VSCode configuration: ESLint, Prettier <br/>
+<br/>
+Built-in feature from Next.js: <br/>
+💡 Absolute Imports using @ prefix <br/>
+☕ Minify HTML & CSS <br/>
+💨 Live reload <br/>
+✅ Cache busting <br/>
+🗺️ Sitemap.xml and robots.txt with next-sitemap <br/>
 
 ## Getting Started
 
