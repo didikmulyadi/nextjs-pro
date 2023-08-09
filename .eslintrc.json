@@ -13,6 +13,8 @@
         "./src/redux/modules/**/*.api.ts",
         "./src/redux/modules/**/*.slice.ts",
         "./src/redux/libs.tsx",
+        "./*.config.ts",
+        "./*.config.js",
         "./src/component/**/*.stories.ts"
       ],
       "rules": {
@@ -58,7 +60,7 @@
       "error",
       {
         "testIdAttribute": ["data-testid"],
-        "testIdPattern": "^(input|button|text|container|list|item)(__[a-z]*[0-9]?)?$"
+        "testIdPattern": "^(input|button|link|text|container|list|item)(__[a-z]*[0-9]?)?$"
       }
     ],
 
