@@ -45,7 +45,7 @@ Built-in feature from Next.js: <br/>
 | Testing  | Unit Testing                   | [Jest](https://jestjs.io/)                                                                                                                                                                   | ✅     |
 | Testing  | Component Testing              | [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)                                                                        | ✅     |
 | Testing  | Automation Testing             | [Cycpress](https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test)                                                                                             | ✅     |
-| I18n     | Internationalization           | Language based on route e.g. `/en`, `/id`                                                                                                                                                    | ✅     |
+| I18n     | Internationalization           | Language based on route e.g. `/en`, `/id`. in server with async and client with custom hooks `useTranslation`                                                                                | ✅     |
 | Google   | Google Analytic                | _TBD_                                                                                                                                                                                        | _TBD_  |
 | PWA      | Progressive Web Apps           | _TBD_                                                                                                                                                                                        | _TBD_  |
 
