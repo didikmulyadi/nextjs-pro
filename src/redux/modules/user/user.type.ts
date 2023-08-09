@@ -32,17 +32,15 @@ export interface IUser {
 }
 
 /**
- *
+ * Used to store the main data after logged-in
  */
 export interface IUserSlice {
   /**
-   *
+   * User name
    */
   name: string
   /**
-   *
+   * Authorization token
    */
   token: string
 }
-
-const a = ''
