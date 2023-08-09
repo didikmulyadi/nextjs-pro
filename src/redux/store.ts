@@ -5,7 +5,7 @@ import { ENV } from '@/config/env'
 
 import { CombinedMiddleware, CombinedReducer } from './modules'
 
-export const store = configureStore({
+const store = configureStore({
   reducer: CombinedReducer,
   devTools: ENV.NODE_ENV !== 'production',
   middleware: (getDefaultMiddleware) =>
@@ -17,3 +17,4 @@ setupListeners(store.dispatch)
 
 export type RootState = ReturnType<typeof store.getState>
 export type AppDispatch = typeof store.dispatch
+export { store }

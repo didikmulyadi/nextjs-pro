@@ -11,6 +11,16 @@ import { store } from './store'
 import type { AppDispatch, RootState } from './store'
 
 /**
+ * Redux toolkit provider props
+ */
+interface IReduxToolkitProvider {
+  /**
+   * react component
+   */
+  children: React.ReactNode
+}
+
+/**
  * A dispatch that is integrated with AppDispatch, so know user has a preview function that can be used
  */
 export const useAppDispatch = () => useDispatch<AppDispatch>()
@@ -24,16 +34,6 @@ export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector
  * Used in *.api.ts when accessing getState
  */
 export type GetState = () => RootState
-
-/**
- * Redux toolkit provider props
- */
-interface IReduxToolkitProvider {
-  /**
-   * react component
-   */
-  children: React.ReactNode
-}
 
 /**
  * A wrapper to share the redux state, usually used in a layout

@@ -110,6 +110,7 @@
     "jsdoc/valid-types": 1, // Recommended
 
     // import
-    "import/no-unused-modules": [2, { "unusedExports": true }]
+    "import/no-unused-modules": [2, { "unusedExports": true }],
+    "import/exports-last": 2
   }
 }

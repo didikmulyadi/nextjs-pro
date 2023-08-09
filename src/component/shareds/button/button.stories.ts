@@ -14,7 +14,6 @@ const meta: Meta<typeof Button> = {
   },
 }
 
-export default meta
 type Story = StoryObj<typeof Button>
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
@@ -44,3 +43,4 @@ export const Small: Story = {
     label: 'Button',
   },
 }
+export default meta
