@@ -25,10 +25,7 @@ interface ITranslationProvider extends ITranslationContext {
 }
 
 const TranslationContext = createContext<ITranslationContext>({
-  translation: {
-    about: {},
-    home: {},
-  } as any,
+  translation: {} as any,
 })
 
 export const useTranslation = () => useContext(TranslationContext).translation
