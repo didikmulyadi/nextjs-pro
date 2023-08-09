@@ -161,6 +161,37 @@ nextjs-advance
 ├─ .env.example
 ├─ .eslintrc.json
 ├─ .gitignore
+├─ .husky
+│  ├─ commit-msg
+│  └─ _
+│     ├─ .gitignore
+│     └─ husky.sh
+├─ .huskyrc
+├─ .prettierrc.json
+├─ .storybook
+│  ├─ main.ts
+│  └─ preview.ts
+├─ .swc
+│  └─ plugins
+│     └─ v7_windows_x86_64_0.98.5
+├─ .vscode
+│  └─ settings.json
+├─ commitlint.config.js
+├─ cypress
+│  ├─ downloads
+│  ├─ e2e
+│  │  └─ app.cy.ts
+│  ├─ fixtures
+│  │  └─ example.json
+│  ├─ support
+│  │  ├─ commands.ts
+│  │  ├─ component-index.html
+│  │  ├─ component.ts
+│  │  └─ e2e.ts
+│  └─ tsconfig.json
+├─ cypress.config.ts
+├─ jest.config.js
+├─ jest.setup.js
 ├─ next.config.js
 ├─ package-lock.json
 ├─ package.json
@@ -173,24 +204,45 @@ nextjs-advance
 │  ├─ app
 │  │  ├─ favicon.ico
 │  │  ├─ globals.css
-│  │  ├─ layout.tsx
-│  │  └─ page.tsx
+│  │  ├─ robots.ts
+│  │  ├─ sitemap.ts
+│  │  └─ [lang]
+│  │     ├─ about
+│  │     │  ├─ page.client.tsx
+│  │     │  └─ page.tsx
+│  │     ├─ layout.tsx
+│  │     └─ page.tsx
 │  ├─ component
-│  │  ├─ layouts
-│  │  ├─ pages
-│  │  └─ shareds
+│  │  ├─ button
+│  │  │  ├─ button.css
+│  │  │  ├─ button.stories.ts
+│  │  │  ├─ button.test.tsx
+│  │  │  ├─ button.tsx
+│  │  │  └─ __snapshots__
+│  │  │     └─ button.test.tsx.snap
+│  │  └─ layouts
 │  ├─ config
 │  │  └─ env.ts
-│  └─ redux
-│     ├─ libs.tsx
-│     ├─ modules
-│     │  ├─ index.ts
-│     │  └─ user
-│     │     ├─ user.api.ts
-│     │     ├─ user.slice.ts
-│     │     ├─ user.type.reqres.ts
-│     │     └─ user.type.ts
-│     └─ store.ts
+│  ├─ i18n
+│  │  ├─ dictionaries
+│  │  │  ├─ en.ts
+│  │  │  ├─ id.ts
+│  │  │  └─ index.ts
+│  │  ├─ index.tsx
+│  │  └─ type.ts
+│  ├─ middleware.ts
+│  ├─ redux
+│  │  ├─ libs.tsx
+│  │  ├─ modules
+│  │  │  ├─ index.ts
+│  │  │  └─ user
+│  │  │     ├─ user.api.ts
+│  │  │     ├─ user.slice.ts
+│  │  │     ├─ user.type.reqres.ts
+│  │  │     └─ user.type.ts
+│  │  └─ store.ts
+│  └─ types
+│     └─ common.ts
 ├─ tailwind.config.js
 └─ tsconfig.json
 
