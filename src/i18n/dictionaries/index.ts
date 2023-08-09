@@ -1,4 +1,3 @@
-/* eslint-disable import/no-unused-modules */
 const dictionaries = {
   en: () => import('./en').then((module) => module.default),
   id: () => import('./id').then((module) => module.default),
