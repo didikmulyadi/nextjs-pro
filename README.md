@@ -45,7 +45,7 @@ Built-in feature from Next.js: <br/>
 | Testing  | Unit Testing                   | [Jest](https://jestjs.io/)                                                                                                                                                                   | ✅     |
 | Testing  | Component Testing              | [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)                                                                        | ✅     |
 | Testing  | Automation Testing             | [Cycpress](https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test)                                                                                             | ✅     |
-| I18n     | Internationalization           | Language based on route e.g. `/en`, `/id`. in server with async and client with custom hooks `useTranslation`                                                                                | ✅     |
+| I18n     | Internationalization           | Language based on route e.g. `/en`, `/id`. in server with async and client with context and custom hooks `useTranslation`                                                                    | ✅     |
 | Google   | Google Analytic                | _TBD_                                                                                                                                                                                        | _TBD_  |
 | PWA      | Progressive Web Apps           | _TBD_                                                                                                                                                                                        | _TBD_  |
 
@@ -246,6 +246,74 @@ nextjs-advance
 ├─ tailwind.config.js
 └─ tsconfig.json
 
+```
+
+## Guide
+
+### Internationalization / Translation
+
+#### Add new language
+
+1. Create a file in `/src/i18n/dictionaries/[lang].ts` e.g. `ch.ts`
+2. Add your new language in `/src/i18n/dictionaries/index.ts`
+
+```
+const dictionaries = {
+  ...
+  ch: () => import('./ch').then((module) => module.default),
+}
+
+export const i18n = {
+  ...
+  locales: [..., 'ch'],
+} as const
+```
+
+#### Add new content in dictionary
+
+1. Add your new content in dictionary type `/src/i18n/type.ts`, it will require you to update the dictionary in existing language
+2. Open the existing dictionary `/src/i18n/dictionaries/{en|id}.ts`, add your content
+
+#### Access translation in the server
+
+```
+const About = async ({ params }: INextPage) => {
+  const t = await getTranslation(params.lang)
+
+  return (
+    ...
+  )
+```
+
+#### Access translation in the client
+
+1. Define the translation in the server
+2. Wrap your page component with translation
+
+```
+// src/app/[lang]/about/page.tsx
+const About = async ({ params }: INextPage) => {
+  const t = await getTranslation(params.lang)
+
+  return (
+    <TranslationProvider translation={t}>
+      <AboutPage />
+    </TranslationProvider>
+  )
+```
+
+3. Access the translation with custom hooks `useTranslation`
+
+```
+// src/app/[lang]/about/page.client.tsx
+export const AboutPage = () => {
+  const t = useTranslation()
+  const tAbout = t.about
+
+  return (
+    <div>{tAbout['DICTIONARY_KEY']}</div>
+  )
+}
 ```
 
 ## Remove Package Guide
