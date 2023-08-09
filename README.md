@@ -28,6 +28,26 @@ Built-in feature from Next.js: <br/>
 ✅ Cache busting <br/>
 🗺️ Sitemap.xml and robots.txt with next-sitemap <br/>
 
+## Installed Packages
+
+| Category | Context                        | Package Name                                                                                                                                                                                 | Status |
+| -------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| UI       | UI CSS Support                 | [Tailwind](https://tailwindcss.com/)                                                                                                                                                         | ✅     |
+| State    | State Management               | [Redux Toolkit](https://github.com/reduxjs/redux-toolkit)                                                                                                                                    | ✅     |
+| State    | Data Fetching and Caching Tool | [RTK Query](https://redux-toolkit.js.org/rtk-query/overview)                                                                                                                                 | ✅     |
+| Doc      | Component Documentation        | [Storybook](https://storybook.js.org/docs/react/get-started/install)                                                                                                                         | ✅     |
+| Rules    | GitHub - Commit Rules          | [Husky](https://typicode.github.io/husky/) with [Commitlint](https://commitlint.js.org/#/concepts-commit-conventions) and [ConventionCommit](https://www.conventionalcommits.org/en/v1.0.0/) | ✅     |
+| Rules    | Eslint - Auto Sort Import      | [Eslint auto import](https://www.npmjs.com/package/eslint-plugin-simple-import-sort)                                                                                                         | ✅     |
+| Rules    | Eslint - Data Test ID format   | [Eslint plugin testing library](https://www.npmjs.com/package/eslint-plugin-testing-library)                                                                                                 | ✅     |
+| Rules    | Eslint - Require JSDoc         | [Eslint plugin JS Doc](https://github.com/gajus/eslint-plugin-jsdoc)                                                                                                                         | ✅     |
+| Rules    | Eslint - Export Rules          | [Eslint plugin import](https://github.com/import-js/eslint-plugin-import)                                                                                                                    | ✅     |
+| Testing  | Unit Testing                   | [Jest](https://jestjs.io/)                                                                                                                                                                   | ✅     |
+| Testing  | Component Testing              | [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)                                                                        | ✅     |
+| Testing  | Automation Testing             | _TBD_                                                                                                                                                                                        | _TBD_  |
+| Content  | Internationalization           | _TBD_                                                                                                                                                                                        | _TBD_  |
+| Google   | Google Analytic                | _TBD_                                                                                                                                                                                        | _TBD_  |
+| PWA      | Progressive Web Apps           | _TBD_                                                                                                                                                                                        | _TBD_  |
+
 ## Getting Started
 
 Install the dependency and trigger husky
@@ -49,26 +69,6 @@ npm run dev
 | NODE_ENV                 | e.g. `production`, `development` |
 | NEXT_PUBLIC_API_BASE_URL | e.g. `https://dummyjson.com`     |
 | NEXT_PUBLIC_WEB_BASE_URL | e.g. `https://didikmulyadi.com`  |
-
-## Installed Packages
-
-| Category | Context                        | Package Name                                                                                                                                                                                 | Status |
-| -------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
-| UI       | UI CSS Support                 | [Tailwind](https://tailwindcss.com/)                                                                                                                                                         | ✅     |
-| State    | State Management               | [Redux Toolkit](https://github.com/reduxjs/redux-toolkit)                                                                                                                                    | ✅     |
-| State    | Data Fetching and Caching Tool | [RTK Query](https://redux-toolkit.js.org/rtk-query/overview)                                                                                                                                 | ✅     |
-| Doc      | Component Documentation        | [Storybook](https://storybook.js.org/docs/react/get-started/install)                                                                                                                         | ✅     |
-| Rules    | GitHub - Commit Rules          | [Husky](https://typicode.github.io/husky/) with [Commitlint](https://commitlint.js.org/#/concepts-commit-conventions) and [ConventionCommit](https://www.conventionalcommits.org/en/v1.0.0/) | ✅     |
-| Rules    | Eslint - Auto Sort Import      | [Eslint auto import](https://www.npmjs.com/package/eslint-plugin-simple-import-sort)                                                                                                         | ✅     |
-| Rules    | Eslint - Data Test ID format   | [Eslint plugin testing library](https://www.npmjs.com/package/eslint-plugin-testing-library)                                                                                                 | ✅     |
-| Rules    | Eslint - Require JSDoc         | [Eslint plugin JS Doc](https://github.com/gajus/eslint-plugin-jsdoc)                                                                                                                         | ✅     |
-| Rules    | Eslint - Export Rules          | [Eslint plugin import](https://github.com/import-js/eslint-plugin-import)                                                                                                                    | ✅     |
-| Testing  | Unit Testing                   | [Jest](https://jestjs.io/)                                                                                                                                                                   | ✅     |
-| Testing  | Component Testing              | [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)                                                                        | ✅     |
-| Testing  | Automation Testing             | _TBD_                                                                                                                                                                                        | _TBD_  |
-| Content  | Internationalization           | _TBD_                                                                                                                                                                                        | _TBD_  |
-| Google   | Google Analytic                | _TBD_                                                                                                                                                                                        | _TBD_  |
-| PWA      | Progressive Web Apps           | _TBD_                                                                                                                                                                                        | _TBD_  |
 
 ## Rules
 
