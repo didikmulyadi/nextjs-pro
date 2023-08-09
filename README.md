@@ -15,7 +15,7 @@ Developer experience first:
 🦺 Unit Testing with Jest and React Testing Library <br/>
 🧪 E2E Testing with Cypress <br/>
 ✅ Strict Mode for TypeScript and React 18 <br/>
-📏 Linter with ESLint (default NextJS, NextJS Core Web Vitals, Eslint testing library, JS Doc, Unused Export) <br/>
+📏 Linter with ESLint (default NextJS, NextJS Core Web Vitals, Eslint testing library, JS Doc, Import/Export) <br/>
 💖 Code Formatter with Prettier <br/>
 🦊 Husky for Git Hooks <br/>
 🚓 Lint git commit with Commitlint <br/>
@@ -62,7 +62,7 @@ npm run dev
 | Rules    | Eslint - Auto Sort Import      | [Eslint auto import](https://www.npmjs.com/package/eslint-plugin-simple-import-sort)                                                                                                         | ✅     |
 | Rules    | Eslint - Data Test ID format   | [Eslint plugin testing library](https://www.npmjs.com/package/eslint-plugin-testing-library)                                                                                                 | ✅     |
 | Rules    | Eslint - Require JSDoc         | [Eslint plugin JS Doc](https://github.com/gajus/eslint-plugin-jsdoc)                                                                                                                         | ✅     |
-| Rules    | Eslint - Unused Export         | [Eslint plugin import](https://github.com/import-js/eslint-plugin-import)                                                                                                                    | ✅     |
+| Rules    | Eslint - Export Rules          | [Eslint plugin import](https://github.com/import-js/eslint-plugin-import)                                                                                                                    | ✅     |
 | Testing  | Unit Testing                   | [Jest](https://jestjs.io/)                                                                                                                                                                   | ✅     |
 | Testing  | Component Testing              | [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)                                                                        | ✅     |
 | Testing  | Automation Testing             | _TBD_                                                                                                                                                                                        | _TBD_  |
@@ -151,6 +151,8 @@ export interface IUserSlice {
   ],
 ```
 
+5. For the export should be in the last of the code. check `"import/exports-last"` from `rules`.
+
 ## Project Structure
 
 ```
@@ -226,3 +228,4 @@ _TBD_
 1. run `npm uninstall eslint-plugin-import`
 2. remove `""import""` from `plugins` in `eslintrc.json`
 3. remove `"import/no-unused-modules"` from `rules` in `eslintrc.json`
+4. remove `"import/exports-last"` from `rules` in `eslintrc.json`
