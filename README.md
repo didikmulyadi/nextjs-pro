@@ -14,6 +14,7 @@ Developer experience first:
 🎉 Storybook for UI documentation <br/>
 🦺 Unit Testing with Jest and React Testing Library <br/>
 🧪 E2E Testing with Cypress <br/>
+🗺️ Support multi language <br />
 ✅ Strict Mode for TypeScript and React 18 <br/>
 📏 Linter with ESLint (default NextJS, NextJS Core Web Vitals, Eslint testing library, JS Doc, Import/Export) <br/>
 💖 Code Formatter with Prettier <br/>
@@ -44,7 +45,7 @@ Built-in feature from Next.js: <br/>
 | Testing  | Unit Testing                   | [Jest](https://jestjs.io/)                                                                                                                                                                   | ✅     |
 | Testing  | Component Testing              | [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)                                                                        | ✅     |
 | Testing  | Automation Testing             | [Cycpress](https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test)                                                                                             | ✅     |
-| Content  | Internationalization           | _TBD_                                                                                                                                                                                        | _TBD_  |
+| I18n     | Internationalization           | Language based on route e.g. `/en`, `/id`                                                                                                                                                    | ✅     |
 | Google   | Google Analytic                | _TBD_                                                                                                                                                                                        | _TBD_  |
 | PWA      | Progressive Web Apps           | _TBD_                                                                                                                                                                                        | _TBD_  |
 
