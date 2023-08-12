@@ -46,8 +46,8 @@ Built-in feature from Next.js: <br/>
 | Testing  | Component Testing              | [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)                                                                        | ✅     |
 | Testing  | Automation Testing             | [Cycpress](https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test)                                                                                             | ✅     |
 | I18n     | Internationalization           | Language based on route e.g. `/en`, `/id`. in server with async and client with context and custom hooks `useTranslation`                                                                    | ✅     |
-| Google   | Google Analytic                | _TBD_                                                                                                                                                                                        | _TBD_  |
-| PWA      | Progressive Web Apps           | _TBD_                                                                                                                                                                                        | _TBD_  |
+| Analytic | Google Analytic                | _TBD_                                                                                                                                                                                        | ✅     |
+| PWA      | Progressive Web Apps           | 🛠️                                                                                                                                                                                           | 🛠️     |
 
 ## Getting Started
 
@@ -65,11 +65,12 @@ npm run dev
 
 ## Environments
 
-| Name                     | Description                      |
-| ------------------------ | -------------------------------- |
-| NODE_ENV                 | e.g. `production`, `development` |
-| NEXT_PUBLIC_API_BASE_URL | e.g. `https://dummyjson.com`     |
-| NEXT_PUBLIC_WEB_BASE_URL | e.g. `https://didikmulyadi.com`  |
+| Name                                       | Description                      |
+| ------------------------------------------ | -------------------------------- |
+| NODE_ENV                                   | e.g. `production`, `development` |
+| NEXT_PUBLIC_API_BASE_URL                   | e.g. `https://dummyjson.com`     |
+| NEXT_PUBLIC_WEB_BASE_URL                   | e.g. `https://didikmulyadi.com`  |
+| NEXT_PUBLIC_GOOGLE_ANALYTIC_MEASUREMENT_ID | e.g. `G-XXXXXXX`                 |
 
 ## Rules
 
