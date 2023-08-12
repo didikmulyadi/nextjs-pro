@@ -46,7 +46,7 @@ Built-in feature from Next.js: <br/>
 | Testing  | Component Testing              | [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)                                                                        | ✅     |
 | Testing  | Automation Testing             | [Cycpress](https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test)                                                                                             | ✅     |
 | I18n     | Internationalization           | Language based on route e.g. `/en`, `/id`. in server with async and client with context and custom hooks `useTranslation`                                                                    | ✅     |
-| Analytic | Google Analytic                | _TBD_                                                                                                                                                                                        | ✅     |
+| Analytic | Analytic                       | Google Analytic                                                                                                                                                                              | ✅     |
 | PWA      | Progressive Web Apps           | 🛠️                                                                                                                                                                                           | 🛠️     |
 
 ## Getting Started
