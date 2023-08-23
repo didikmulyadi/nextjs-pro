@@ -1,12 +1,12 @@
-import { ThunkDispatch } from '@reduxjs/toolkit'
 import {
   Provider,
   TypedUseSelectorHook,
   useDispatch,
   useSelector,
 } from 'react-redux'
+import { PersistGate } from 'redux-persist/integration/react'
 
-import { store } from './store'
+import { persistor, store } from './store'
 
 import type { AppDispatch, RootState } from './store'
 
@@ -40,5 +40,11 @@ export type GetState = () => RootState
  * @param {props} props is parameter that is contain a component
  */
 export const ReduxToolkitProvider = (props: IReduxToolkitProvider) => {
-  return <Provider store={store}>{props.children}</Provider>
+  return (
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        {props.children}
+      </PersistGate>
+    </Provider>
+  )
 }
